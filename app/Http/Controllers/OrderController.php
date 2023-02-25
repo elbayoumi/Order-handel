@@ -89,7 +89,7 @@ class OrderController extends Controller
                 ,"clienPhone"=>"required"
             ]);
             $order->update($request->all());
-            // $order =(new Order)->update($request->all());
+            // $order =(new Order)->update($request->all()); 
             // return redirect("order.index");
             return redirect()->route('order.index')->with('success', 'Your order has been updated successfully.');
         }

@@ -16,7 +16,7 @@ use App\Http\Controllers\OrderController;
 Route::get('/', function () {
     return view('welcome');
 });
-// Route::resource('order', OrderController::class);
-Route::get('/show', [OrderController::class, 'show']);
-Route::get('/create', [OrderController::class, 'create']);
+Route::resource('order', OrderController::class);
+// Route::get('/show', [OrderController::class, 'show']);
+// Route::get('/create', [OrderController::class, 'create']);
 //
